@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: linear-gradient(to right, cyan, lightsteelblue);
 }
 
 .cell{
@@ -17,6 +18,7 @@ body {
     align-items: center;
     font-size: 2rem;
     transition: background-color 0.3s ease;
+    background: white;
 }
 
 .cell:hover{
@@ -32,16 +34,16 @@ body {
 
 #gameMessage {
     text-align: center;
-    margin-top: 20px;
+    margin: 10px 0 10px 0;
     font-size: 20px;
-    color: #333;
+    color: black;
 }
 
 #resetButton {
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff;
-    background-color: #333;
+    color: white;
+    background-color: black;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -49,5 +51,5 @@ body {
 }
 
 #resetButton:hover {
-    background-color: #555;
+    background-color: dimgrey;
 }

@@ -29,3 +29,10 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
+
+#gameMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}

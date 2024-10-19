@@ -76,3 +76,16 @@ function announceDraw() {
     const messageElement = document.getElementById('gameMessage');
     messageElement.innerText = 'Game Draw!';
 }
+
+function resetGame() {
+    gameBoard = ['', '', '', '', '', '', '', '', ''];
+    gameActive = true;
+    currentPlayer = 'X';
+    cells.forEach(cell => {
+        cell.innerText = '';
+    });
+    document.getElementById('gameMessage').innerText = '';
+}
+
+const resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', resetGame, false);

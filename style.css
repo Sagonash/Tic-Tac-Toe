@@ -1,27 +1,26 @@
 body {
-    /* Устанавливаем основной шрифт всей страницы */
     font-family: 'Arial', sans-serif;
-  
-    /* Настраиваем стили так, чтобы центрировать все содержимое по вертикали */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-    /* Растягиваем страницу на всю высоту экрана */
     height: 100vh;
-  
-    /* Убираем внешние отступы */
     margin: 0;
-  
-    /* Устанавливаем основной цвет текста */
-    color: #333;
 }
 
 .cell{
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover{
+    background: lightgray;
 }
 
 .row{
